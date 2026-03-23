@@ -26,13 +26,12 @@ function RootLayoutNav() {
       <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
       <Stack.Screen
         name="clan/[tag]"
-        options={{
-          headerShown: false,
-          presentation: "card",
-          animation: "slide_from_right",
-        }}
+        options={{ headerShown: false, presentation: "card", animation: "slide_from_right" }}
       />
-
+      <Stack.Screen
+        name="player/[tag]"
+        options={{ headerShown: false, presentation: "card", animation: "slide_from_right" }}
+      />
     </Stack>
   );
 }
